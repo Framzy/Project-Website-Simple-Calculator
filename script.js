@@ -10,8 +10,6 @@ btn.forEach((button) => {
       } catch (error) {
         display.textContent = "Error";
       }
-    } else if (value === "C") {
-      display.textContent = "";
     } else {
       display.textContent += value;
     }
@@ -21,14 +19,4 @@ btn.forEach((button) => {
 const clearButton = document.querySelector(".clear");
 clearButton.addEventListener("click", () => {
   display.textContent = "";
-});
-
-const percentButton = document.querySelector(".btn");
-percentButton.addEventListener("click", () => {
-  display.textContent = eval(display.textContent) / 100;
-});
-
-const plusMinusButton = document.querySelector(".btn");
-plusMinusButton.addEventListener("click", () => {
-  display.textContent = eval(display.textContent) * -1;
 });
