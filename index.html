@@ -4,38 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <!-- tailwind css -->
-    <link rel="stylesheet" href="src/styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="container">
+  <body
+    class="bg-gray-500 font-[poppins] flex justify-center items-center h-screen"
+  >
+    <div
+      class="flex flex-col justify-center items-center bg-[#383838] rounded-lg"
+    >
+      <!-- Display -->
       <input
         type="text"
         id="display"
-        class="display"
         readonly
         aria-label="Calculator display"
+        class="bg-white w-[300px] h-[50px] p-2.5 text-right text-black text-xl rounded-t-lg border-none focus:outline-none"
       />
-      <div class="buttons">
-        <button class="btn clear">C</button>
-        <button class="btn delete">DEL</button>
-        <button class="btn operator">%</button>
-        <button class="btn operator">/</button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn operator">*</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn operator">-</button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn operator">+</button>
-        <button class="btn zero">0</button>
-        <button class="btn">.</button>
-        <button class="btn equal">=</button>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap justify-center my-5 w-[300px] box-border">
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-red-700 text-white text-lg"
+        >
+          C
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-yellow-600 text-white text-lg"
+        >
+          DEL
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-yellow-600 text-white text-lg"
+        >
+          %
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-yellow-600 text-white text-lg"
+        >
+          /
+        </button>
+
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          7
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          8
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          9
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-yellow-600 text-white text-lg"
+        >
+          *
+        </button>
+
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          4
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          5
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          6
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-yellow-600 text-white text-lg"
+        >
+          -
+        </button>
+
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          1
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          2
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          3
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-yellow-600 text-white text-lg"
+        >
+          +
+        </button>
+
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          0
+        </button>
+        <button
+          class="w-[60px] h-[60px] m-1.5 rounded-xl bg-gray-200 hover:bg-gray-300 text-lg"
+        >
+          .
+        </button>
+        <button
+          class="w-[130px] h-[60px] m-1.5 rounded-xl bg-yellow-600 text-white text-lg"
+        >
+          =
+        </button>
       </div>
     </div>
 
