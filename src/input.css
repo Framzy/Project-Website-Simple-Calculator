@@ -4,31 +4,30 @@
 
 @layer components {
   .display {
-    @apply bg-white w-[300px] h-[50px] p-2.5 text-right text-black text-xl 
-           rounded-t-lg border-none focus:outline-none;
+    @apply bg-white w-[300px] h-[50px] p-[30px] text-right text-black text-2xl 
+           rounded-t-xl border-none focus:outline-none;
   }
 
   .buttons {
-    @apply flex flex-wrap justify-center my-5 w-[300px] box-border;
+    @apply flex flex-wrap justify-center my-2 w-[300px] box-border;
   }
 
   .btn {
-    @apply w-[60px] h-[60px] m-1.5 rounded-full bg-gray-200 hover:bg-gray-300 
+    @apply w-[60px] h-[60px] m-1.5 rounded-2xl bg-[#e0e0e0] hover:bg-gray-300 
            text-lg font-bold text-gray-800;
   }
 
-  .btn.operator {
-    @apply bg-yellow-600 text-white;
+  .btn.operator,
+  .delete,
+  .equal {
+    @apply bg-[#f9a825] text-white;
   }
 
   .btn.clear {
     @apply bg-red-700 text-white;
   }
 
-  .btn.delete {
-    @apply bg-yellow-600 text-white;
-  }
   .btn.equal {
-    @apply bg-yellow-600 text-white w-[130px];
+    @apply w-[130px];
   }
 }
