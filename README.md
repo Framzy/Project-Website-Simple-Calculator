@@ -2,7 +2,7 @@
 
 Making a simple website calculator
 
-# 🧮 Project Simple Calculator
+## 🧮 Project Simple Calculator
 
 Kalkulator sederhana berbasis **JavaScript** dengan dua versi:
 
@@ -49,28 +49,30 @@ PROJECT-SIMPLE-CALCULATOR/
 
 2. **Install dependencies**
 
-   ```
+   ```bash
    npm install
    ```
 
 3. **Build Tailwind sekali**
 
-   ```
+   ```bash
    npm run build
    ```
 
 4. **Atau jalankan build otomatis (watch mode)**
 
-   ```
+   ```bash
    npm run watch
    ```
 
 5. **Jalankan di browser**
 
-   ```
+   ```bash
    Buka index.html dengan Live Server
    Atau buka langsung di browser (file:///.../index.html)
    ```
+
+---
 
 🎨 Fitur
 
