@@ -6,49 +6,52 @@
     <title>Calculator</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body
-    class="flex flex-col justify-center items-center h-screen bg-slate-50 dark:bg-[#8f8f8f] font-[poppins]"
-  >
-    <!-- Toggle Dark Mode -->
-    <button
-      id="toggle-dark"
-      class="mb-4 px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"
-    >
-      Dark Mode
-    </button>
+  <body class="flex flex-col justify-center items-center font-[poppins]">
     <div
-      class="flex flex-col justify-center items-center bg-[#383838] rounded-xl p-2"
+      class="bg-white dark:bg-[#858585] flex justify-center items-center flex-col w-screen h-screen"
     >
-      <!-- Display -->
-      <input
-        type="text"
-        id="display"
-        readonly
-        aria-label="Calculator display"
-        class="display"
-      />
+      <!-- Toggle Dark Mode -->
+      <button
+        type="button"
+        id="toggle-dark"
+        class="mb-4 px-4 py-2 rounded bg-slate-600 dark:bg-slate-200 text-white dark:text-slate-800 hover:bg-slate-800 dark:hover:bg-slate-300"
+      >
+        Dark Mode
+      </button>
+      <div
+        class="flex flex-col justify-center items-center bg-slate-200 dark:bg-[#383838] rounded-xl p-2"
+      >
+        <!-- Display -->
+        <input
+          type="text"
+          id="display"
+          readonly
+          aria-label="Calculator display"
+          class="display"
+        />
 
-      <!-- Buttons -->
-      <div class="buttons">
-        <button class="btn clear">C</button>
-        <button class="btn delete">DEL</button>
-        <button class="btn operator">%</button>
-        <button class="btn operator">/</button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn operator">*</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn operator">-</button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn operator">+</button>
-        <button class="btn zero">0</button>
-        <button class="btn">.</button>
-        <button class="btn equal">=</button>
+        <!-- Buttons -->
+        <div class="buttons">
+          <button class="btn clear">C</button>
+          <button class="btn delete">DEL</button>
+          <button class="btn operator">%</button>
+          <button class="btn operator">/</button>
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn operator">*</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button class="btn operator">-</button>
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn operator">+</button>
+          <button class="btn zero">0</button>
+          <button class="btn">.</button>
+          <button class="btn equal">=</button>
+        </div>
       </div>
     </div>
 

@@ -4,7 +4,7 @@
 
 @layer components {
   .display {
-    @apply bg-white w-[300px] h-[50px] p-[30px] text-right text-black text-2xl 
+    @apply bg-slate-400 dark:bg-white w-[300px] h-[50px] p-[30px] text-right text-slate-100 dark:text-slate-900 text-2xl 
            rounded-t-xl border-none focus:outline-none;
   }
 
@@ -13,18 +13,18 @@
   }
 
   .btn {
-    @apply w-[60px] h-[60px] m-1.5 rounded-2xl bg-[#e0e0e0] hover:bg-gray-300 
-           text-lg font-bold text-gray-800;
+    @apply w-[60px] h-[60px] m-1.5 rounded-2xl bg-slate-500 dark:bg-[#e0e0e0]  hover:bg-gray-300 
+           text-lg font-bold text-white dark:text-gray-800;
   }
 
   .btn.operator,
   .delete,
   .equal {
-    @apply bg-[#f9a825] text-white;
+    @apply bg-[#f9bb59] text-gray-600 dark:bg-[#f9a825] dark:text-white;
   }
 
   .btn.clear {
-    @apply bg-red-700 text-white;
+    @apply bg-red-400 text-gray-600 dark:bg-red-700 dark:text-white;
   }
 
   .btn.equal {
